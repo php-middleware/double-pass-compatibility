@@ -6,13 +6,13 @@ This package provide trait and abstract class for your [psr-15 middlewares](http
 
 So you can call your middleware in both styles.
 
-*Standard PSR-15 call:*
+**Standard PSR-15 call:**
 
 ```php
 $middeware->process($request, $delegate);
 ```
 
-*Possible call after implements this package:*
+**Possible call after implements this package:**
 
 ```php
 $middleware($request, $response, $next);
